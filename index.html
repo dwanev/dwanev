@@ -3,126 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Advancing AI for complex, ill-defined problems with reinforcement learning, explainability, and simulated inference.">
-    <title>Welcome to ReasonedAI.com</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>ReasonedAI - Fundamental Research in Reinforcement Learning</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 60px 20px;
         }
-        header {
-            text-align: center;
-            background-color: #7CAF80;
-            color: white;
-            padding: 20px 0;
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+
+        h1 {
+            font-size: 2.8em;
+            color: #1a237e;
+            margin-bottom: 30px;
+            font-weight: 700;
+            line-height: 1.2;
         }
-        section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+
         h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        .cta {
-            text-align: center;
+            font-size: 1.8em;
+            color: #3949ab;
             margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
         }
-        .cta a {
-            text-decoration: none;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1.1em;
+
+        p {
+            font-size: 1.15em;
+            margin-bottom: 20px;
+            color: #34495e;
         }
-        .cta a:hover {
-            background-color: #45a049;
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .research-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .research-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-card h3 {
+            color: #5c6bc0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .research-card p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #546e7a;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to ReasonedAI.com</h1>
-        <p>Applying Reinforcement Learning to Complex, Ill-Defined Problems</p>
-    </header>
-
     <div class="container">
-        <section>
-            <h2>Advancing AI for Complex, Ill-Defined Problems</h2>
-            <p>
-                At <strong>ReasonedAI.com</strong>, we specialize in creating AI solutions that go beyond traditional problem-solving.
-                Our research focuses on developing reinforcement learning that is intrinsically explainable.
-                This allows us to produce a well-defined, testable hypothesis from a problem definition.
-            </p>
-            <p>
-                Our research focuses on applying <strong>reinforcement learning</strong> and advancing <strong>explainability</strong>
-                to tackle some of the world’s most ill-defined challenges, problems that are vague, evolving, and resistant to conventional approaches.
-            </p>
-            <p>
-                We believe the future of artificial intelligence lies in navigating the unknown. From healthcare to environmental
-                sustainability and emergent systems, we are developing AI technologies that are not only innovative but also <strong>transparent</strong>
-                in their decision-making processes, allowing human collaborators to trust and understand the solutions AI provides.
-            </p>
-        </section>
+        <div class="hero">
+            <h1>Advancing the Theoretical Foundations of Reinforcement Learning</h1>
 
-        <section>
-            <h2>Our Vision</h2>
-            <p>
-                To harness the power of <strong>reinforcement learning</strong> and <strong>explainability</strong> in AI, empowering us to tackle the uncertain,
-                ambiguous problems that dominate our world.
-            </p>
-        </section>
+            <p>At ReasonedAI, we pursue fundamental questions at the intersection of reinforcement learning theory, explainability, and decision-making under uncertainty. Our work is driven by curiosity about the nature of learning systems and the mathematical principles that govern intelligent behavior.</p>
 
-        <section>
-            <h2>Our Approach</h2>
-            <ul>
-                <li><strong>Reinforcement Learning Innovation:</strong> By focusing on reinforcement learning, we create AI systems that can adapt and learn through interaction, continuously improving as they face dynamic, ever-changing environments. This makes them uniquely suited to solving problems where the rules are not predefined.</li>
-                <li><strong>Explainable AI (XAI):</strong> Transparency is at the heart of our research. We are dedicated to developing AI that not only delivers results but also explains its reasoning in a clear, understandable way. Explainability is critical in ensuring that AI-driven solutions are trusted and safely implemented in high-stakes industries.</li>
-            </ul>
-        </section>
+            <p>Rather than focusing on immediate applications, we investigate the foundational mechanisms through which artificial agents can develop interpretable decision-making frameworks. Our research explores how learning systems can generate well-formed hypotheses from problem structures, and how these processes can be made transparent and verifiable.</p>
 
-        <section>
-            <h2>Why Ill-Defined Problems Matter</h2>
-            <p>
-                Many of the world’s most critical challenges: climate change, global health, complex socio-economic systems, do not have clear paths to resolution.
-                These are <strong>ill-defined problems</strong>, and they resist simple, static solutions. Solutions must be able to be proposed even when the
-                starting knowledge and mechanics are incomplete or contain hidden inconsistencies.
+            <div class="highlight">
+                <h2>Our Research Philosophy</h2>
+                <p>We believe that deep understanding precedes practical innovation. By examining the theoretical underpinnings of reinforcement learning and explainability, we aim to contribute to the broader scientific understanding of adaptive systems, regardless of their eventual use cases.</p>
+            </div>
 
-                Our approach, grounded in <strong>explainability</strong> and <strong>reinforcement learning</strong>, allows AI to evolve alongside these challenges.
-            </p>
-        </section>
+            <h2>Core Research Directions</h2>
 
-        <section>
-            <h2>Our Research in Action</h2>
-            <ul>
-                <li><strong>Dynamic Decision-Making:</strong> Using reinforcement learning, we develop AI that learns and optimizes its behavior in real-time, allowing for smarter, faster responses to unpredictable scenarios.</li>
-                <li><strong>Sample Efficient</strong> Our current techniques are orders of magnitude more sample efficient, meaning less data and less time needed for a solution. </li>
-                <li><strong>Transparent Solutions:</strong> With explainability at the core, we build AI that ensures human experts can follow and trust the decision-making processes, creating a harmonious collaboration between human intuition and machine intelligence.</li>
-            </ul>
-        </section>
+            <div class="research-areas">
+                <div class="research-card">
+                    <h3>Theoretical Foundations</h3>
+                    <p>Investigating the mathematical structures that enable reinforcement learning agents to reason about complex, evolving environments. We study convergence properties, representational capacity, and the limits of learnability in open-ended problem spaces.</p>
+                </div>
 
+                <div class="research-card">
+                    <h3>Intrinsic Explainability</h3>
+                    <p>Exploring how interpretability can emerge as a fundamental property of learning architectures rather than as a post-hoc addition. Our work examines the trade-offs between expressiveness and transparency in decision-making systems.</p>
+                </div>
 
+                <div class="research-card">
+                    <h3>Hypothesis Formation</h3>
+                    <p>Studying how learning systems can autonomously generate testable, well-defined hypotheses from problem definitions. We investigate the cognitive architectures that bridge perception, reasoning, and hypothesis generation.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Uncertainty and Ambiguity</h3>
+                    <p>Examining how artificial agents can navigate problems characterized by fundamental uncertainty, incomplete information, or inherent ambiguity. Our research contributes to understanding decision-making in non-stationary and adversarial environments.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Learning Dynamics</h3>
+                    <p>Analyzing the temporal evolution of learning systems, including phase transitions, emergent behaviors, and the relationship between exploration strategies and knowledge acquisition.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Knowledge Representation</h3>
+                    <p>Investigating how learned knowledge can be structured, verified, and communicated. We explore the relationship between internal representations and external interpretability frameworks.</p>
+                </div>
+            </div>
+
+            <h2>Advancing Scientific Understanding</h2>
+
+            <p>Our commitment to basic research means prioritizing questions that deepen our understanding of learning and reasoning, even when practical applications remain distant or uncertain. We view each theoretical insight as a contribution to the collective knowledge of the artificial intelligence research community.</p>
+
+            <p>Through rigorous investigation of reinforcement learning's foundational principles, we aspire to illuminate the mechanisms by which systems can adaptively navigate complexity while maintaining transparency in their reasoning processes.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>ReasonedAI.com</strong></p>
+            <p>Fundamental Research in Reinforcement Learning and Explainability</p>
+        </div>
     </div>
-
 </body>
 </html>
